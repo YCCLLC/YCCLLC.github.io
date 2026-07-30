@@ -19,56 +19,60 @@
     <style>
       :root {
         color-scheme: light;
-        --cp-bg: #f7f4ef;
-        --cp-bg-elevated: #fcfbf8;
+        --cp-bg: #f7f4ec;
+        --cp-bg-elevated: #efe9dc;
         --cp-surface: #ffffff;
-        --cp-surface-soft: #f5f5f5;
-        --cp-border: #dedede;
-        --cp-border-strong: #919191;
-        --cp-text: #242424;
-        --cp-text-muted: #5c5c5c;
-        --cp-text-soft: #6f6f6f;
-        --cp-accent: #b11f4b;
-        --cp-accent-hover: #9a1a41;
-        --cp-accent-soft: rgba(177, 31, 75, 0.08);
-        --cp-accent-fg: #ffffff;
+        --cp-surface-soft: #f3eee4;
+        --cp-border: #d7c9aa;
+        --cp-border-strong: #9a783b;
+        --cp-text: #0b1e32;
+        --cp-text-muted: #405064;
+        --cp-text-soft: #536174;
+        --cp-accent: #c69a45;
+        --cp-accent-hover: #ad8032;
+        --cp-accent-soft: rgba(198, 154, 69, 0.16);
+        --cp-accent-fg: #0b1e32;
         --cp-success: #16a34a;
         --cp-danger: #dc2626;
-        --cp-warning: #f59e0b;
-        --cp-link: #0078d4;
-        --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.12);
-        --cp-overlay: rgba(255, 255, 255, 0.8);
+        --cp-warning: #c69a45;
+        --cp-link: #745519;
+        --cp-shadow: 0 18px 48px rgba(11, 30, 50, 0.16);
+        --cp-overlay: rgba(11, 30, 50, 0.96);
         --cp-panel: rgba(255, 255, 255, 0.86);
         --cp-panel-strong: rgba(255, 255, 255, 0.96);
         --cp-sheen: rgba(255, 255, 255, 0.55);
-        --cp-highlight: rgba(177, 31, 75, 0.12);
+        --cp-highlight: rgba(198, 154, 69, 0.2);
+        --cp-header-text: #ffffff;
+        --cp-header-muted: #e8d6ae;
       }
 
       html[data-theme="dark"] {
         color-scheme: dark;
-        --cp-bg: #3d3b3a;
-        --cp-bg-elevated: #343231;
-        --cp-surface: #292929;
-        --cp-surface-soft: #2e2e2e;
-        --cp-border: #474747;
-        --cp-border-strong: #5f5f5f;
-        --cp-text: #dedede;
-        --cp-text-muted: #919191;
-        --cp-text-soft: #b0b0b0;
-        --cp-accent: #fd8ea1;
-        --cp-accent-hover: #fb7b91;
-        --cp-accent-soft: rgba(253, 142, 161, 0.14);
-        --cp-accent-fg: #1a1a1a;
+        --cp-bg: #071525;
+        --cp-bg-elevated: #0a1b2e;
+        --cp-surface: #10263d;
+        --cp-surface-soft: #142c45;
+        --cp-border: #334b64;
+        --cp-border-strong: #c69a45;
+        --cp-text: #f7f4ec;
+        --cp-text-muted: #c0cad4;
+        --cp-text-soft: #d5dce3;
+        --cp-accent: #d8ad59;
+        --cp-accent-hover: #e7c477;
+        --cp-accent-soft: rgba(216, 173, 89, 0.16);
+        --cp-accent-fg: #071525;
         --cp-success: #4ade80;
         --cp-danger: #f87171;
-        --cp-warning: #fbbf24;
-        --cp-link: #4da6ff;
+        --cp-warning: #d8ad59;
+        --cp-link: #e7c477;
         --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.32);
-        --cp-overlay: rgba(41, 41, 41, 0.88);
-        --cp-panel: rgba(41, 41, 41, 0.72);
-        --cp-panel-strong: rgba(41, 41, 41, 0.96);
+        --cp-overlay: rgba(7, 21, 37, 0.94);
+        --cp-panel: rgba(16, 38, 61, 0.72);
+        --cp-panel-strong: rgba(16, 38, 61, 0.96);
         --cp-sheen: rgba(255, 255, 255, 0.04);
-        --cp-highlight: rgba(253, 142, 161, 0.12);
+        --cp-highlight: rgba(216, 173, 89, 0.18);
+        --cp-header-text: #f7f4ec;
+        --cp-header-muted: #e7c477;
       }
 
       * {
@@ -117,6 +121,7 @@
         display: flex;
         align-items: center;
         gap: 12px;
+        color: var(--cp-header-text);
         font-weight: 700;
         text-decoration: none;
       }
@@ -135,13 +140,18 @@
       }
 
       .nav-links a {
-        color: var(--cp-text-muted);
+        color: var(--cp-header-muted);
         font-weight: 600;
         text-decoration: none;
       }
 
       .nav-links a:hover {
         color: var(--cp-accent);
+      }
+
+      .nav-links .button,
+      .nav-links .button:hover {
+        color: var(--cp-accent-fg);
       }
 
       .hero {
@@ -411,7 +421,7 @@
       <nav class="nav container" aria-label="Primary navigation">
         <a class="brand" href="#top">
           <img
-            src="https://github.com/Ab3y/YCC/blob/main/YCC_Logo.jpeg?raw=true"
+            src="YCC_Logo.jpeg"
             alt=""
           >
           <span>Yardley Crest Consulting</span>
@@ -440,7 +450,7 @@
         </div>
         <div class="hero-mark" aria-label="Yardley Crest Consulting logo">
           <img
-            src="https://github.com/Ab3y/YCC/blob/main/YCC_Logo.jpeg?raw=true"
+            src="YCC_Logo.jpeg"
             alt="Yardley Crest Consulting"
           >
         </div>
