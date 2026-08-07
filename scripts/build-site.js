@@ -243,7 +243,7 @@ function nav(active) {
       <nav class="nav container" aria-label="Primary navigation">
         <a class="brand" href="/">
           <img src="/YCC_Logo.jpeg" alt="">
-          <span>Yardley Crest Consulting</span>
+          <span>Yardley Crest Solutions</span>
         </a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" data-menu-toggle>
           <span aria-hidden="true">&#9776;</span><span class="sr-only">Menu</span>
@@ -264,7 +264,7 @@ function footer() {
   return `<footer class="site-footer">
       <div class="footer-grid container">
         <div class="footer-brand">
-          <img src="/YCC_Logo.jpeg" alt="Yardley Crest Consulting">
+          <img src="/YCC_Logo.jpeg" alt="Yardley Crest Solutions">
           <p>Strategy, architecture, and disciplined execution for measurable business impact.</p>
         </div>
         <div class="footer-column">
@@ -290,7 +290,7 @@ function footer() {
         </div>
       </div>
       <div class="footer-bottom container">
-        <span>&copy; <span data-current-year></span> Yardley Crest Consulting LLC.</span>
+        <span>&copy; <span data-current-year></span> Yardley Crest Solutions LLC.</span>
         <div class="footer-bottom-links">
           <a href="/accessibility/">Accessibility</a>
           <a href="/privacy/">Privacy</a>
@@ -321,7 +321,7 @@ function layout({ title, description, active = "", eyebrow, heading, intro, brea
     <meta property="og:description" content="${escapeAttribute(description)}">
     <meta property="og:type" content="website">
     <meta property="og:image" content="${siteUrl}/YCC_Logo.jpeg">
-    <title>${title} | Yardley Crest Consulting</title>
+    <title>${title} | Yardley Crest Solutions</title>
     ${themeScript()}
     <link rel="stylesheet" href="/assets/styles.css">
   </head>
@@ -625,11 +625,11 @@ function buildCompanyPages() {
     "/about/",
     layout({
       title: "About",
-      description: "Yardley Crest Consulting combines strategic clarity with operational rigor to help organizations deliver measurable outcomes.",
+      description: "Yardley Crest Solutions combines strategic clarity with operational rigor to help organizations deliver measurable outcomes.",
       active: "/about/",
       eyebrow: "About Yardley Crest",
       heading: "Practical consulting for ambitious outcomes.",
-      intro: "Yardley Crest Consulting helps organizations align strategy, operating design, execution, and performance.",
+      intro: "Yardley Crest Solutions helps organizations align strategy, operating design, execution, and performance.",
       breadcrumbs: [["/about/", "About"]],
       content: `<section>
           <div class="split container">
@@ -662,7 +662,7 @@ function buildCompanyPages() {
     "/leadership/",
     layout({
       title: "Leadership",
-      description: "The leadership principles and client accountability model behind Yardley Crest Consulting.",
+      description: "The leadership principles and client accountability model behind Yardley Crest Solutions.",
       active: "/about/",
       eyebrow: "Leadership",
       heading: "Senior accountability from direction through delivery.",
@@ -709,7 +709,7 @@ function buildCompanyPages() {
     "/careers/",
     layout({
       title: "Careers",
-      description: "Career and independent consulting opportunities with Yardley Crest Consulting.",
+      description: "Career and independent consulting opportunities with Yardley Crest Solutions.",
       active: "/careers/",
       eyebrow: "Careers",
       heading: "Do practical work with visible impact.",
@@ -737,7 +737,7 @@ function buildCompanyPages() {
     "/client-resources/",
     layout({
       title: "Client Resources",
-      description: "Resources and platform links for Yardley Crest Consulting clients and collaborators.",
+      description: "Resources and platform links for Yardley Crest Solutions clients and collaborators.",
       eyebrow: "Client resources",
       heading: "A clear place for shared work and delivery visibility.",
       intro: "Client-specific access instructions are provided directly as part of each engagement.",
@@ -758,7 +758,7 @@ function buildCompanyPages() {
     "/contact/",
     layout({
       title: "Contact",
-      description: "Connect with Yardley Crest Consulting through its official GitHub presence.",
+      description: "Connect with Yardley Crest Solutions through its official GitHub presence.",
       eyebrow: "Contact",
       heading: "Start with the outcome you need to achieve.",
       intro: "Verified business email, telephone, and office information will be added once approved for public use.",
@@ -806,7 +806,7 @@ function buildPolicyPages() {
       sections: [
         ["Informational purpose", "Website content is provided for general informational purposes and does not create a consulting, fiduciary, legal, tax, accounting, employment, or other professional relationship."],
         ["No guarantee", "Illustrative approaches and potential outcomes depend on context, implementation, leadership decisions, data quality, and other factors. Results are not guaranteed."],
-        ["Intellectual property", "Unless otherwise stated, site branding and original content are owned by or used with permission by Yardley Crest Consulting LLC."],
+        ["Intellectual property", "Unless otherwise stated, site branding and original content are owned by or used with permission by Yardley Crest Solutions LLC."],
         ["External services", "The site links to third-party services, including GitHub. Yardley Crest is not responsible for third-party content, availability, or practices."],
         ["Acceptable use", "Do not attempt to disrupt the site, misuse public channels, impersonate the company, or submit unlawful or harmful content."],
       ],
@@ -834,12 +834,12 @@ function buildPolicyPages() {
 function build404() {
   const html = layout({
     title: "Page Not Found",
-    description: "The requested Yardley Crest Consulting page could not be found.",
+    description: "The requested Yardley Crest Solutions page could not be found.",
     eyebrow: "404",
     heading: "That page is not available.",
     intro: "The address may be incorrect, or the page may have moved.",
     breadcrumbs: [["/", "Page not found"]],
-    content: `<section><div class="container narrow"><div class="cta"><h2>Return to the main site</h2><p>Use the homepage to continue exploring Yardley Crest Consulting.</p><a class="button" href="/">Go to homepage</a></div></div></section>`
+    content: `<section><div class="container narrow"><div class="cta"><h2>Return to the main site</h2><p>Use the homepage to continue exploring Yardley Crest Solutions.</p><a class="button" href="/">Go to homepage</a></div></div></section>`
   });
   fs.writeFileSync(path.join(root, "404.html"), html);
   generatedCount += 1;
